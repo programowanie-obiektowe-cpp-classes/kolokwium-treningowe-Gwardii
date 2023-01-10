@@ -3,7 +3,7 @@ project(kolokwium)
 
 macro(defProblem name source)
   add_executable("${name}" "${source}" "src/tests_main.cpp")
-  set_target_properties("${name}" PROPERTIES CXX_STANDARD 17)
+  set_target_properties("${name}" PROPERTIES CXX_STANDARD 20)
   target_include_directories("${name}" PUBLIC include)
 endmacro()
 
